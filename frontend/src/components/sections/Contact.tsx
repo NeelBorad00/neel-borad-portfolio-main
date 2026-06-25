@@ -22,7 +22,7 @@ export function Contact() {
     setStatus('loading');
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000'}/api/contact`,
+        '/api/contact',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

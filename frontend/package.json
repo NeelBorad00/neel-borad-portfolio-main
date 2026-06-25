@@ -12,7 +12,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "motion": "^11.18.2",
-    "lenis": "^1.1.14"
+    "lenis": "^1.1.14",
+    "nodemailer": "^6.10.1",
+    "zod": "^3.25.67"
   },
   "devDependencies": {
     "typescript": "^5.8.3",
@@ -21,6 +23,7 @@
     "@types/react-dom": "^19.1.6",
     "tailwindcss": "^3.4.17",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.4"
+    "postcss": "^8.5.4",
+    "@types/nodemailer": "^6.4.17"
   }
 }
