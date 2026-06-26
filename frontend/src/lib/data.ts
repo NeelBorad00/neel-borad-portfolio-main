@@ -4,7 +4,7 @@ export const personal = {
   tagline: 'Building intelligent products at the intersection of AI and strategy.',
   email: 'neelborad00@gmail.com',
   phone: '+91 9586151481',
-  linkedinUrl: 'https://linkedin.com/in/neelborad',
+  linkedinUrl: 'https://www.linkedin.com/in/neel8562/',
   githubUrl: 'https://github.com/neelborad00',
   location: 'Surat, India',
   currentCompany: 'Mirai Minds LLP',
