@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from 'motion/react';
 import { personal } from '@/lib/data';
 import { MagneticButton } from '@/components/ui/MagneticButton';
 import { ParticleField } from '@/components/ui/ParticleField';
+import { AiOrb } from '@/components/ui/AiOrb';
 
 export function Hero() {
   const reduced = useReducedMotion();
@@ -96,6 +97,9 @@ export function Hero() {
           <p className="mt-4 font-mono text-label text-t3">{personal.location}</p>
         </motion.aside>
       </div>
+
+      {/* AI Orb — top-right, below navbar */}
+      <AiOrb />
 
       {/* Scroll indicator — absolutely pinned to bottom, never overlaps buttons */}
       <motion.div {...entry(0.9)} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex items-center gap-3">

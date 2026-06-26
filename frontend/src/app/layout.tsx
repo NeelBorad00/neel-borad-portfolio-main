@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${syne.variable} ${jakarta.variable} ${mono.variable}`}>
-      <body className="font-body bg-base text-text">
+      <body className="font-body bg-base text-text" suppressHydrationWarning>
         <LenisProvider>
           <CustomCursor />
           <NoiseOverlay />
