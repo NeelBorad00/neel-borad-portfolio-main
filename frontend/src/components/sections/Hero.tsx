@@ -27,7 +27,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-dvh flex flex-col px-6 md:px-12 pt-24 pb-8 overflow-hidden"
+      className="relative h-dvh flex flex-col px-6 md:px-12 pt-24 pb-16 overflow-hidden"
     >
       {/* Particle field — behind all content */}
       <ParticleField />
@@ -68,8 +68,8 @@ export function Hero() {
           </motion.p>
 
           <motion.div {...entry(0.6)} className="mt-7 flex flex-wrap gap-4">
-            <MagneticButton href="#work" variant="primary">
-              View Work
+            <MagneticButton href="#experience" variant="primary">
+              View Experience
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                 <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -97,9 +97,8 @@ export function Hero() {
         </motion.aside>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div {...entry(0.9)} className="relative z-10 mt-6 flex items-center gap-3">
-        <div className="h-px w-6 bg-t3" />
+      {/* Scroll indicator — absolutely pinned to bottom, never overlaps buttons */}
+      <motion.div {...entry(0.9)} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex items-center gap-3">
         <span className="font-mono text-label uppercase tracking-widest text-t3">Scroll</span>
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" className="text-t3">
           <path d="M6 1v10M1 6l5 5 5-5" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
